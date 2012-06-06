@@ -1,0 +1,17 @@
+﻿@model IEnumerable<ProductsPortal.Models.Product>
+@{
+  ViewBag.Title = "Product Inventory";
+}
+<h2>Product Inventory</h2>
+<table>
+<tr>
+  <th>Name</th><th>Quantity</th>
+</tr>
+@foreach (var item in Model)
+{
+  <tr>
+  <td>@item.Name</td>
+  <td>@item.Quantity</td>
+</tr>
+}
+</table>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="ProductsPortal.Azure" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="1" osVersion="*">
+  <Role name="ProductsPortal">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="vcarluer" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEB7UjUGpKyChR1LNVBAgknMwDQYJKoZIhvcNAQEBBQAEggEAYZ/FvgO2ckkoEj0SBKe75oSsP0Q/3fLM8h1khZR62JWcYV1aCSnT1gOW4h6S8IRD095ovoTte6wNQ0PFSGdJZObkCYVnj4/K4Z+L1zpZ6Z5ZLT9IXKYG1gxJTFrZeFWXhoHK46KHpGprOoxSk8x6XWzJM4fYp/zIZGdoI+Ns7rN2x3h+GAi1+1nSAyhfbUE3KasGsV0ofA3JeQmEdGTWLdBJaVzb7Tyif5ku4tHZWcg43c+2J5f5mgFhf/Txed3iTpCO+r2sm0iBKpaRs6/uP2t/AwzbsbVj8UeWwM/+tW4zWHHFBhF+5nxUaYwoRJfjzTyPZZdHAcwAs9Ay+W28fzAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECLifBdQGMcwpgBAaxHB5/JH8Nf6MzgRLPlzm" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2013-06-06T23:59:59.0000000+02:00" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="97BD29D26B2D544261D4504A6DB37759E0389050" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>
